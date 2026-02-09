@@ -14,7 +14,7 @@
         
         <aside class="sidebar">
             <div class="profile-container">
-                <img src="profile.jpg" alt="Abdullah Al Mamun" class="profile-photo">
+                <img src="profile.JPG" alt="Abdullah Al Mamun" class="profile-photo">
             </div>
             
             <div class="sidebar-info">
@@ -52,6 +52,29 @@
                 <p class="bio-text">
                     My current research, <em>"Plant Disease Detection Using Self-Supervised Learning,"</em> aims to reduce the reliance on large labeled datasets in precision agriculture. Previously, I served as an <strong>Assistant Professor</strong> and <strong>Chairman of the EEE Department</strong> at Feni University.
                 </p>
+
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="num">51+</span>
+                        <span class="label">Publications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="num">536+</span>
+                        <span class="label">Citations</span>
+                    </div>
+                    <div class="stat">
+                        <span class="num">15</span>
+                        <span class="label">h-index</span>
+                    </div>
+                    <div class="stat">
+                        <span class="num">20</span>
+                        <span class="label">i10-index</span>
+                    </div>
+                    <div class="stat">
+                        <span class="num">6+ years</span>
+                        <span class="label">Teaching Experience</span>
+                    </div>
+                </div>
             </section>
 
             <hr class="divider">
@@ -163,12 +186,6 @@
                         <h4>Fi Sabilillah Research Development Grant</h4>
                         <span class="exp-org">FRDGS, Malaysia</span>
                         <span class="exp-date">2021</span>
-                    </div>
-
-                    <div class="exp-item">
-                        <h4>University Grant Commission Scholarship</h4>
-                        <span class="exp-org">Academic Excellence Award</span>
-                        <span class="exp-date">2014 - 2018</span>
                     </div>
                 </div>
             </section>
