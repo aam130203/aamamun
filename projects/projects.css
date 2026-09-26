@@ -1,1 +1,1083 @@
-:root{--ink:#17243b;--muted:#667085;--line:#e7eaf0;--accent:#a2d6bd;--sidebar:#121b2a;--font:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:var(--font);line-height:1.65;background:#fcfcfd}a{color:inherit}a:focus-visible{outline:3px solid #3173d7;outline-offset:4px}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;z-index:5;background:white;padding:1rem}.layout{min-height:100vh}.sidebar{position:fixed;inset:0 auto 0 0;width:32%;min-width:320px;max-width:450px;background:var(--sidebar);color:#f4f8fb;padding:48px 44px;display:flex;flex-direction:column;overflow-y:auto}.portrait{border-radius:50%;object-fit:cover;object-position:center top;border:4px solid #394859;width:128px;height:128px;margin-bottom:24px}.kicker{letter-spacing:.19em;font-weight:800;font-size:.67rem;color:#5e8777}.side-eyebrow{color:var(--accent)}.sidebar .kicker{color:var(--accent);margin:0 0 7px}.sidebar h1{font-size:clamp(2rem,3.1vw,2.9rem);line-height:1.14;letter-spacing:-.06em;margin:0 0 17px}.accent{color:var(--accent)}.role{color:#e1e8f1;margin:0 0 17px}.bio{color:#aebccb;font-size:.92rem;max-width:290px;margin:0 0 38px}.sidebar nav{border-top:1px solid #344052}.sidebar nav a{display:block;padding:15px 0;text-decoration:none;font-size:.84rem;color:#b8c5d3;border-bottom:1px solid #344052}.sidebar nav span{font-size:.69rem;margin-right:15px;color:#8594a8}.sidebar nav a.current,.sidebar nav a:hover{color:#b7ecd0}.sidebar-bottom{margin-top:auto;padding-top:40px}.social{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:20px}.social a{font-size:.76rem;color:#c8d9e5}.sidebar-bottom small{color:#798aa1;font-size:.69rem}.main{margin-left:min(max(32%,320px),450px);padding:0 clamp(26px,6vw,105px);max-width:1600px}.top{height:96px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);font-size:.78rem;color:var(--muted)}.top a{text-decoration:none}.availability{color:#47705e}.intro{padding:94px 0 66px;border-bottom:1px solid var(--line)}.intro .kicker{margin:0 0 14px}.intro h2{font-size:clamp(3.3rem,7vw,6rem);letter-spacing:-.075em;line-height:1.08;margin:0 0 25px;font-weight:780}.intro h2 em{font-style:normal;color:#729b89}.lead{font-size:1.16rem;line-height:1.85;color:#536071;max-width:690px;margin:0 0 27px}.tags{display:flex;flex-wrap:wrap;gap:9px}.tags span{border:1px solid #dce6e1;background:#f3f8f5;padding:7px 12px;border-radius:40px;color:#496958;font-size:.75rem;font-weight:650}.section-head{display:flex;align-items:center;justify-content:space-between;padding:34px 0 17px}.section-head h3{font-size:1rem;margin:0}.section-head span{font-size:.75rem;color:var(--muted)}.project{display:grid;grid-template-columns:minmax(190px,37%) 1fr;gap:34px;padding:32px 0 42px;border-bottom:1px solid var(--line)}.art{height:215px;border-radius:12px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.art svg{width:100%;max-width:320px;height:auto;max-height:215px;fill:none;stroke-width:2}.art circle{stroke:none}.art-caption{position:absolute;bottom:12px;left:17px;color:#fff;font-weight:750;font-size:.59rem;letter-spacing:.09em}.con{background:linear-gradient(140deg,#093d37,#188876)}.con svg{stroke:#a9f3cb}.con svg circle{fill:#f6d883}.ps{background:linear-gradient(140deg,#172d51,#506fc1)}.ps svg{stroke:#d0e1ff}.ps svg rect{fill:#ffffff12}.state{background:linear-gradient(140deg,#46325a,#a35c85)}.state svg{stroke:#f7cae4}.review{background:linear-gradient(140deg,#715323,#bd9255)}.review svg{stroke:#fff2d7}.review svg rect{fill:#ffffff14}.review svg circle{fill:#ffedbc}.details .meta{display:flex;justify-content:space-between;align-items:center;gap:8px;color:#6b8c7e;font-size:.67rem;letter-spacing:.1em;font-weight:800}.details .meta time{color:#949da8}.details h4{font-size:clamp(1.35rem,2.15vw,1.9rem);letter-spacing:-.035em;line-height:1.3;margin:10px 0 3px}.subtitle{font-weight:700;color:#4b5f69;margin:0 0 14px;font-size:.91rem}.details>p:not(.subtitle):not(.venue){font-size:.9rem;color:#657080;margin:0 0 12px}.venue{font-size:.8rem;color:#547261;font-weight:650;margin:0 0 18px}.links{display:flex;flex-wrap:wrap;gap:18px;align-items:center}.links a{text-decoration:none;font-size:.78rem;font-weight:750}.links a:hover{text-decoration:underline}.links .primary{display:inline-block;background:#1e3445;color:#fff;border-radius:5px;padding:9px 13px}.contact{margin:70px 0 32px;padding:40px;background:#edf5f1;border-radius:12px}.contact h3{font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.04em;margin:4px 0 10px}.contact p:not(.kicker){color:#61726b;font-size:.9rem}.contact>a{font-weight:800;color:#1c5643;overflow-wrap:anywhere}footer{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:24px 0 40px;color:#7a8492;font-size:.75rem}footer a{text-decoration:none}@media(max-width:1100px){.sidebar{width:300px;min-width:0;padding:38px 27px}.main{margin-left:300px;padding:0 34px}.project{gap:24px;grid-template-columns:40% 1fr}}@media(max-width:820px){.sidebar{position:relative;width:100%;max-width:none;padding:32px 28px}.portrait{height:96px;width:96px}.sidebar h1{font-size:2.2rem}.sidebar .bio{max-width:none;margin-bottom:20px}.sidebar-bottom{margin-top:0;padding-top:24px}.main{margin-left:0;padding:0 26px}.intro{padding:65px 0 49px}.top{height:70px}.project{grid-template-columns:1fr;gap:20px}.art{height:220px}.contact{margin-top:45px}}@media(max-width:450px){.main{padding:0 19px}.intro h2{font-size:3.2rem}.availability{display:none}.contact{padding:25px}footer{flex-direction:column}}
+/* ==========================================================
+   PROJECTS PAGE · Abdullah Al Mamun · September 2026
+========================================================== */
+
+:root{
+  --ink:#17243b;
+  --muted:#667085;
+  --line:#e7eaf0;
+  --accent:#a2d6bd;
+  --accent-dark:#47705e;
+  --accent-deep:#1c5643;
+  --soft:#f3f8f5;
+  --sidebar:#121b2a;
+  --sidebar-line:#344052;
+  --paper:#ffffff;
+
+  --font:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* ==========================================================
+   RESET / GENERAL
+========================================================== */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  color:var(--ink);
+  font-family:var(--font);
+  line-height:1.65;
+  background:#fcfcfd;
+}
+
+a{
+  color:inherit;
+}
+
+a:focus-visible{
+  outline:3px solid #3173d7;
+  outline-offset:4px;
+}
+
+
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+
+.skip{
+  position:absolute;
+  left:-9999px;
+}
+
+.skip:focus{
+  left:1rem;
+  top:1rem;
+  z-index:100;
+  background:white;
+  padding:1rem;
+}
+
+
+/* ==========================================================
+   MAIN LAYOUT
+========================================================== */
+
+.layout{
+  min-height:100vh;
+}
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar{
+  position:fixed;
+  inset:0 auto 0 0;
+
+  width:32%;
+  min-width:320px;
+  max-width:450px;
+
+  background:var(--sidebar);
+  color:#f4f8fb;
+
+  padding:48px 44px;
+
+  display:flex;
+  flex-direction:column;
+
+  overflow-y:auto;
+}
+
+
+/* profile image */
+
+.portrait{
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center top;
+
+  border:4px solid #394859;
+
+  width:128px;
+  height:128px;
+
+  margin-bottom:24px;
+}
+
+
+/* labels */
+
+.kicker{
+  letter-spacing:.19em;
+  font-weight:800;
+  font-size:.67rem;
+  color:#5e8777;
+}
+
+.side-eyebrow{
+  color:var(--accent);
+}
+
+.sidebar .kicker{
+  color:var(--accent);
+  margin:0 0 7px;
+}
+
+
+/* profile name */
+
+.sidebar h1{
+  font-size:clamp(2rem,3.1vw,2.9rem);
+  line-height:1.14;
+  letter-spacing:-.06em;
+
+  margin:0 0 17px;
+}
+
+.accent{
+  color:var(--accent);
+}
+
+
+/* role */
+
+.role{
+  color:#e1e8f1;
+  margin:0 0 17px;
+}
+
+
+/* profile description */
+
+.bio{
+  color:#aebccb;
+  font-size:.92rem;
+
+  max-width:290px;
+
+  margin:0 0 38px;
+}
+
+
+/* ==========================================================
+   SIDEBAR NAVIGATION
+========================================================== */
+
+.sidebar nav{
+  border-top:1px solid var(--sidebar-line);
+}
+
+.sidebar nav a{
+  display:block;
+
+  padding:15px 0;
+
+  text-decoration:none;
+
+  font-size:.84rem;
+
+  color:#b8c5d3;
+
+  border-bottom:1px solid var(--sidebar-line);
+}
+
+.sidebar nav span{
+  font-size:.69rem;
+
+  margin-right:15px;
+
+  color:#8594a8;
+}
+
+.sidebar nav a.current,
+.sidebar nav a:hover{
+  color:#b7ecd0;
+}
+
+
+/* ==========================================================
+   SIDEBAR FOOTER
+========================================================== */
+
+.sidebar-bottom{
+  margin-top:auto;
+  padding-top:40px;
+}
+
+.social{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+
+  margin-bottom:20px;
+}
+
+.social a{
+  font-size:.76rem;
+  color:#c8d9e5;
+}
+
+.sidebar-bottom small{
+  color:#798aa1;
+  font-size:.69rem;
+}
+
+
+/* ==========================================================
+   MAIN CONTENT
+========================================================== */
+
+.main{
+  margin-left:min(max(32%,320px),450px);
+
+  padding:
+    0
+    clamp(26px,6vw,105px);
+
+  max-width:1600px;
+}
+
+
+/* ==========================================================
+   TOP BAR
+========================================================== */
+
+.top{
+  height:96px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  border-bottom:1px solid var(--line);
+
+  font-size:.78rem;
+
+  color:var(--muted);
+}
+
+.top a{
+  text-decoration:none;
+}
+
+.availability{
+  color:var(--accent-dark);
+}
+
+
+/* ==========================================================
+   PAGE INTRODUCTION
+========================================================== */
+
+.intro{
+  padding:94px 0 66px;
+
+  border-bottom:1px solid var(--line);
+}
+
+.intro .kicker{
+  margin:0 0 14px;
+}
+
+.intro h2{
+  font-size:clamp(3.3rem,7vw,6rem);
+
+  letter-spacing:-.075em;
+
+  line-height:1.08;
+
+  margin:0 0 25px;
+
+  font-weight:780;
+}
+
+.intro h2 em{
+  font-style:normal;
+  color:#729b89;
+}
+
+
+/* introduction text */
+
+.lead{
+  font-size:1.16rem;
+
+  line-height:1.85;
+
+  color:#536071;
+
+  max-width:750px;
+
+  margin:0 0 27px;
+}
+
+
+/* optional introduction tags */
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+
+.tags span{
+  border:1px solid #dce6e1;
+
+  background:var(--soft);
+
+  padding:7px 12px;
+
+  border-radius:40px;
+
+  color:#496958;
+
+  font-size:.75rem;
+
+  font-weight:650;
+}
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.section-head{
+  display:flex;
+
+  align-items:center;
+  justify-content:space-between;
+
+  padding:34px 0 17px;
+}
+
+.section-head h3{
+  font-size:1rem;
+  margin:0;
+}
+
+.section-head span{
+  font-size:.75rem;
+  color:var(--muted);
+}
+
+
+/* ==========================================================
+   RESEARCH PROGRAM
+========================================================== */
+
+.research-program{
+  padding:54px 0 64px;
+
+  border-bottom:1px solid var(--line);
+}
+
+
+/* first research program */
+
+.research-program:first-of-type{
+  padding-top:38px;
+}
+
+
+/* ==========================================================
+   PROGRAM HEADER
+========================================================== */
+
+.program-head{
+  display:grid;
+
+  grid-template-columns:65px minmax(0,1fr);
+
+  gap:24px;
+}
+
+
+/* project number */
+
+.program-number{
+  color:#5a8873;
+
+  font-size:.8rem;
+
+  font-weight:800;
+
+  letter-spacing:.06em;
+
+  padding-top:7px;
+}
+
+.program-number span:first-child{
+  display:block;
+}
+
+
+/* short green line beneath number */
+
+.program-number-line{
+  display:block;
+
+  width:34px;
+
+  border-top:2px solid #7fb9a0;
+
+  margin-top:12px;
+}
+
+
+/* ==========================================================
+   PROGRAM INFORMATION
+========================================================== */
+
+.program-copy{
+  min-width:0;
+}
+
+
+/* small metadata */
+
+.mini-meta{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:7px 18px;
+
+  color:#668d7d;
+
+  font-size:.67rem;
+
+  letter-spacing:.11em;
+
+  font-weight:800;
+
+  text-transform:uppercase;
+
+  margin-bottom:8px;
+}
+
+
+/* project title */
+
+.program-copy h2{
+  font-size:clamp(1.85rem,3vw,2.75rem);
+
+  line-height:1.2;
+
+  letter-spacing:-.045em;
+
+  margin:7px 0 17px;
+
+  max-width:820px;
+}
+
+
+/* project description */
+
+.program-summary{
+  max-width:800px;
+
+  color:#606d7b;
+
+  font-size:.94rem;
+
+  line-height:1.82;
+
+  margin:0;
+}
+
+
+/* ==========================================================
+   RESEARCH PROGRAM TAGS
+========================================================== */
+
+.program-tags{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:8px;
+
+  margin-top:20px;
+}
+
+.program-tags span{
+  border:1px solid #dce6e1;
+
+  background:var(--soft);
+
+  color:#496958;
+
+  padding:6px 11px;
+
+  border-radius:30px;
+
+  font-size:.7rem;
+
+  font-weight:650;
+}
+
+
+/* ==========================================================
+   MANUSCRIPT SECTION TITLE
+========================================================== */
+
+.manuscript-heading{
+  margin:
+    34px
+    0
+    10px
+    89px;
+
+  color:#4f7968;
+
+  font-size:.7rem;
+
+  font-weight:800;
+
+  letter-spacing:.14em;
+
+  text-transform:uppercase;
+}
+
+
+/* ==========================================================
+   MANUSCRIPT LIST
+========================================================== */
+
+.manuscript-list{
+  margin-left:89px;
+
+  border-left:1px solid #dce5e1;
+}
+
+
+/* ==========================================================
+   INDIVIDUAL MANUSCRIPT
+========================================================== */
+
+.manuscript-item{
+  position:relative;
+
+  padding:
+    21px
+    0
+    24px
+    28px;
+
+  border-bottom:1px solid var(--line);
+}
+
+
+/* timeline point */
+
+.manuscript-item::before{
+  content:"";
+
+  position:absolute;
+
+  top:31px;
+  left:-4px;
+
+  width:7px;
+  height:7px;
+
+  background:#7eb89e;
+
+  border-radius:50%;
+}
+
+
+/* manuscript metadata */
+
+.manuscript-meta{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:6px 15px;
+
+  margin-bottom:7px;
+
+  color:#668d7d;
+
+  font-size:.65rem;
+
+  font-weight:800;
+
+  letter-spacing:.09em;
+
+  text-transform:uppercase;
+}
+
+
+/* manuscript title */
+
+.manuscript-item h4{
+  max-width:780px;
+
+  margin:3px 0 8px;
+
+  font-size:1.05rem;
+
+  line-height:1.48;
+
+  letter-spacing:-.015em;
+}
+
+
+/* manuscript description */
+
+.manuscript-item p{
+  max-width:760px;
+
+  color:#697482;
+
+  font-size:.84rem;
+
+  line-height:1.75;
+
+  margin:5px 0;
+}
+
+
+/* ==========================================================
+   MANUSCRIPT LINKS
+========================================================== */
+
+.manuscript-links{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:18px;
+
+  margin-top:11px;
+}
+
+.manuscript-links a{
+  color:#385f50;
+
+  font-size:.74rem;
+
+  font-weight:800;
+
+  text-decoration:none;
+}
+
+.manuscript-links a:hover{
+  text-decoration:underline;
+}
+
+
+/* main paper button */
+
+.manuscript-links a:first-child{
+  display:inline-block;
+
+  background:#1e3445;
+
+  color:white;
+
+  border-radius:5px;
+
+  padding:7px 11px;
+}
+
+
+/* ==========================================================
+   CURRENT / ONGOING MANUSCRIPT
+========================================================== */
+
+.manuscript-current{
+  background:
+    linear-gradient(
+      90deg,
+      #f1f7f4 0%,
+      rgba(243,248,245,.5) 58%,
+      transparent 100%
+    );
+}
+
+.manuscript-status{
+  color:#537868 !important;
+
+  font-size:.73rem !important;
+
+  font-weight:700;
+}
+
+
+/* ==========================================================
+   PROJECT PUBLICATION NOTE
+========================================================== */
+
+.program-publications-note{
+  margin:
+    27px
+    0
+    0
+    89px;
+
+  padding:17px 20px;
+
+  background:#f3f8f5;
+
+  border-left:3px solid #83bba3;
+
+  border-radius:0 8px 8px 0;
+}
+
+.program-publications-note p{
+  color:#66746f;
+
+  font-size:.83rem;
+
+  margin:0 0 8px;
+}
+
+.program-publications-note a{
+  color:#355e4e;
+
+  font-size:.76rem;
+
+  font-weight:800;
+
+  text-decoration:none;
+}
+
+.program-publications-note a:hover{
+  text-decoration:underline;
+}
+
+
+/* ==========================================================
+   OPTIONAL CONTACT SECTION
+========================================================== */
+
+.contact{
+  margin:70px 0 32px;
+
+  padding:40px;
+
+  background:#edf5f1;
+
+  border-radius:12px;
+}
+
+.contact h3{
+  font-size:clamp(1.6rem,3vw,2.2rem);
+
+  letter-spacing:-.04em;
+
+  margin:4px 0 10px;
+}
+
+.contact p:not(.kicker){
+  color:#61726b;
+
+  font-size:.9rem;
+}
+
+.contact>a{
+  font-weight:800;
+
+  color:var(--accent-deep);
+
+  overflow-wrap:anywhere;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:12px;
+
+  border-top:1px solid var(--line);
+
+  padding:24px 0 40px;
+
+  color:#7a8492;
+
+  font-size:.75rem;
+}
+
+footer a{
+  text-decoration:none;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media(max-width:1100px){
+
+  .sidebar{
+    width:300px;
+
+    min-width:0;
+
+    padding:38px 27px;
+  }
+
+  .main{
+    margin-left:300px;
+
+    padding:0 34px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE / TABLET
+========================================================== */
+
+@media(max-width:820px){
+
+  .sidebar{
+    position:relative;
+
+    width:100%;
+
+    max-width:none;
+
+    padding:32px 28px;
+  }
+
+
+  .portrait{
+    height:96px;
+    width:96px;
+  }
+
+
+  .sidebar h1{
+    font-size:2.2rem;
+  }
+
+
+  .sidebar .bio{
+    max-width:none;
+
+    margin-bottom:20px;
+  }
+
+
+  .sidebar-bottom{
+    margin-top:0;
+
+    padding-top:24px;
+  }
+
+
+  .main{
+    margin-left:0;
+
+    padding:0 26px;
+  }
+
+
+  .intro{
+    padding:65px 0 49px;
+  }
+
+
+  .top{
+    height:70px;
+  }
+
+
+  /* research program */
+
+  .research-program{
+    padding:42px 0 52px;
+  }
+
+
+  .program-head{
+    grid-template-columns:48px minmax(0,1fr);
+
+    gap:15px;
+  }
+
+
+  .program-copy h2{
+    font-size:clamp(1.65rem,5vw,2.15rem);
+  }
+
+
+  .program-summary{
+    font-size:.88rem;
+  }
+
+
+  .manuscript-heading{
+    margin-left:63px;
+  }
+
+
+  .manuscript-list{
+    margin-left:63px;
+  }
+
+
+  .program-publications-note{
+    margin-left:63px;
+  }
+
+
+  .contact{
+    margin-top:45px;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media(max-width:450px){
+
+  .main{
+    padding:0 19px;
+  }
+
+
+  .intro h2{
+    font-size:3.2rem;
+  }
+
+
+  .availability{
+    display:none;
+  }
+
+
+  .program-head{
+    grid-template-columns:37px minmax(0,1fr);
+
+    gap:9px;
+  }
+
+
+  .program-number{
+    font-size:.72rem;
+  }
+
+
+  .program-number-line{
+    width:23px;
+  }
+
+
+  .program-copy h2{
+    font-size:1.55rem;
+  }
+
+
+  .program-tags{
+    gap:6px;
+  }
+
+
+  .program-tags span{
+    font-size:.65rem;
+
+    padding:5px 8px;
+  }
+
+
+  .manuscript-heading{
+    margin-left:46px;
+  }
+
+
+  .manuscript-list{
+    margin-left:46px;
+  }
+
+
+  .manuscript-item{
+    padding-left:18px;
+  }
+
+
+  .manuscript-item h4{
+    font-size:.97rem;
+  }
+
+
+  .program-publications-note{
+    margin-left:46px;
+  }
+
+
+  .contact{
+    padding:25px;
+  }
+
+
+  footer{
+    flex-direction:column;
+  }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL MOBILE
+========================================================== */
+
+@media(max-width:370px){
+
+  .manuscript-heading{
+    margin-left:0;
+  }
+
+  .manuscript-list{
+    margin-left:0;
+  }
+
+  .program-publications-note{
+    margin-left:0;
+  }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+  html{
+    scroll-behavior:auto;
+  }
+
+}
