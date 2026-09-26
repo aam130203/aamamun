@@ -535,125 +535,105 @@ a:focus-visible{
 
 
 /* ==========================================================
-   MANUSCRIPT SECTION TITLE
+   RELATED MANUSCRIPTS
+   Styled like Featured Research on homepage
 ========================================================== */
 
-.manuscript-heading{
-  margin:
-    34px
-    0
-    10px
-    89px;
+.related-manuscripts{
+  margin:34px 0 0 89px;
+}
 
-  color:#4f7968;
 
-  font-size:.7rem;
+/* section heading */
 
-  font-weight:800;
+.related-heading{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+  padding-bottom:11px;
+  margin-bottom:0;
+}
 
-  letter-spacing:.14em;
-
-  text-transform:uppercase;
+.related-heading h3{
+  margin:0;
+  font-size:1rem;
+  letter-spacing:-.02em;
+  color:var(--ink);
 }
 
 
 /* ==========================================================
-   MANUSCRIPT LIST
+   MANUSCRIPT ROW
 ========================================================== */
 
-.manuscript-list{
-  margin-left:89px;
-
-  border-left:1px solid #dce5e1;
-}
-
-
-/* ==========================================================
-   INDIVIDUAL MANUSCRIPT
-========================================================== */
-
-.manuscript-item{
-  position:relative;
-
-  padding:
-    21px
-    0
-    24px
-    28px;
-
+.manuscript-row{
+  display:grid;
+  grid-template-columns:52px minmax(0,1fr);
+  gap:16px;
+  padding:24px 0;
   border-bottom:1px solid var(--line);
 }
 
 
-/* timeline point */
+/* manuscript number */
 
-.manuscript-item::before{
-  content:"";
-
-  position:absolute;
-
-  top:31px;
-  left:-4px;
-
-  width:7px;
-  height:7px;
-
-  background:#7eb89e;
-
-  border-radius:50%;
-}
-
-
-/* manuscript metadata */
-
-.manuscript-meta{
-  display:flex;
-
-  flex-wrap:wrap;
-
-  gap:6px 15px;
-
-  margin-bottom:7px;
-
-  color:#668d7d;
-
-  font-size:.65rem;
-
+.manuscript-mark{
+  color:#527a69;
   font-weight:800;
+  font-size:.83rem;
+  padding-top:2px;
+}
 
-  letter-spacing:.09em;
+.manuscript-mark-line{
+  display:block;
+  width:29px;
+  margin-top:11px;
+  border-top:2px solid #86bca5;
+}
 
+
+/* ==========================================================
+   MANUSCRIPT CONTENT
+========================================================== */
+
+.manuscript-copy{
+  min-width:0;
+}
+
+.manuscript-mini-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px 17px;
+  color:#668d7d;
+  font-size:.65rem;
+  letter-spacing:.11em;
   text-transform:uppercase;
+  font-weight:800;
 }
 
-
-/* manuscript title */
-
-.manuscript-item h4{
-  max-width:780px;
-
-  margin:3px 0 8px;
-
-  font-size:1.05rem;
-
-  line-height:1.48;
-
-  letter-spacing:-.015em;
-}
-
-
-/* manuscript description */
-
-.manuscript-item p{
+.manuscript-copy h4{
+  margin:8px 0 8px;
   max-width:760px;
+  color:var(--ink);
+  font-size:1.12rem;
+  line-height:1.48;
+  letter-spacing:-.02em;
+}
 
-  color:#697482;
-
+.manuscript-copy > p:not(.manuscript-venue):not(.manuscript-status){
+  max-width:740px;
+  margin:6px 0;
+  color:#667180;
   font-size:.84rem;
+  line-height:1.72;
+}
 
-  line-height:1.75;
-
-  margin:5px 0;
+.manuscript-venue{
+  margin:7px 0 0;
+  color:#4f6d60;
+  font-size:.76rem;
+  font-weight:700;
 }
 
 
@@ -661,43 +641,22 @@ a:focus-visible{
    MANUSCRIPT LINKS
 ========================================================== */
 
-.manuscript-links{
+.manuscript-inline-links{
   display:flex;
-
   flex-wrap:wrap;
-
-  gap:18px;
-
-  margin-top:11px;
+  gap:16px;
+  margin-top:10px;
 }
 
-.manuscript-links a{
-  color:#385f50;
-
-  font-size:.74rem;
-
+.manuscript-inline-links a{
+  color:#315c4c;
+  font-size:.75rem;
   font-weight:800;
-
   text-decoration:none;
 }
 
-.manuscript-links a:hover{
+.manuscript-inline-links a:hover{
   text-decoration:underline;
-}
-
-
-/* main paper button */
-
-.manuscript-links a:first-child{
-  display:inline-block;
-
-  background:#1e3445;
-
-  color:white;
-
-  border-radius:5px;
-
-  padding:7px 11px;
 }
 
 
@@ -705,7 +664,7 @@ a:focus-visible{
    CURRENT / ONGOING MANUSCRIPT
 ========================================================== */
 
-.manuscript-current{
+.manuscript-row.manuscript-current{
   background:
     linear-gradient(
       90deg,
@@ -716,13 +675,11 @@ a:focus-visible{
 }
 
 .manuscript-status{
-  color:#537868 !important;
-
-  font-size:.73rem !important;
-
+  margin:7px 0 0;
+  color:#537868;
+  font-size:.73rem;
   font-weight:700;
 }
-
 
 /* ==========================================================
    PROJECT PUBLICATION NOTE
@@ -935,12 +892,7 @@ footer a{
   }
 
 
-  .manuscript-heading{
-    margin-left:63px;
-  }
-
-
-  .manuscript-list{
+  .related-manuscripts{
     margin-left:63px;
   }
 
@@ -1012,23 +964,30 @@ footer a{
   }
 
 
-  .manuscript-heading{
+  .related-manuscripts{
     margin-left:46px;
   }
 
 
-  .manuscript-list{
-    margin-left:46px;
+  .manuscript-row{
+    grid-template-columns:36px minmax(0,1fr);
+    gap:9px;
+    padding:20px 0;
   }
 
 
-  .manuscript-item{
-    padding-left:18px;
+  .manuscript-mark{
+    font-size:.72rem;
   }
 
 
-  .manuscript-item h4{
-    font-size:.97rem;
+  .manuscript-mark-line{
+    width:22px;
+  }
+
+
+  .manuscript-copy h4{
+    font-size:1rem;
   }
 
 
@@ -1055,11 +1014,7 @@ footer a{
 
 @media(max-width:370px){
 
-  .manuscript-heading{
-    margin-left:0;
-  }
-
-  .manuscript-list{
+  .related-manuscripts{
     margin-left:0;
   }
 
