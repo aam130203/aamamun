@@ -874,10 +874,10 @@ button{
 
 /* ==========================================================
    PROJECTS PAGE EXTENSIONS
-   These styles intentionally reuse the homepage visual system.
+   Keeps the same visual language as the homepage
 ========================================================== */
 
-/* Research program container */
+/* Main research-program block */
 .research-program{
   margin:26px 0 70px;
 }
@@ -886,7 +886,8 @@ button{
   padding-top:8px;
 }
 
-/* Main research program header */
+
+/* Main research-program heading */
 .program-head{
   display:grid;
   grid-template-columns:60px minmax(0,1fr);
@@ -946,127 +947,32 @@ button{
 
 /* ==========================================================
    RELATED MANUSCRIPTS
-   Matches homepage "Featured research" styling
+   Reuses the exact homepage Featured Research row classes:
+   .section-bar, .project-row, .project-mark,
+   .project-mark-line, .mini-meta, .project-copy,
+   .project-subtitle, .venue and .inline-links
 ========================================================== */
 
 .related-manuscripts{
-  margin:28px 0 0 74px;
+  margin-top:34px;
 }
 
-.related-heading{
-  display:flex;
-  align-items:baseline;
-  justify-content:space-between;
-  gap:15px;
-  border-bottom:1px solid var(--line);
-  padding-bottom:11px;
+.related-manuscripts .section-bar{
   margin-bottom:0;
 }
 
-.related-heading h3{
-  font-size:20px;
-  letter-spacing:-.4px;
-  margin:0;
+.related-manuscripts .project-row{
+  padding:28px 0;
 }
 
-/* Manuscript row: same visual language as .project-row */
-.manuscript-row{
-  display:grid;
-  grid-template-columns:60px 1fr;
-  gap:14px;
-  padding:24px 0;
-  border-bottom:1px solid var(--line);
-}
-
-.manuscript-mark{
-  color:var(--accentdark);
-  font-weight:800;
-  font-size:15px;
-}
-
-.manuscript-mark-line{
-  display:block;
-  width:32px;
-  margin-top:12px;
-  border-top:2px solid var(--accent);
-}
-
-.manuscript-copy{
-  min-width:0;
-}
-
-.manuscript-mini-meta{
-  font-size:10px;
-  letter-spacing:1.3px;
-  text-transform:uppercase;
-  color:var(--accentdark);
-  font-weight:750;
-  display:flex;
-  flex-wrap:wrap;
-  gap:7px 17px;
-}
-
-.manuscript-copy h4{
-  font-size:23px;
-  letter-spacing:-.6px;
-  line-height:1.35;
-  margin:8px 0 8px;
-}
-
-.manuscript-copy > p:not(.manuscript-venue):not(.manuscript-status){
-  font-size:14px;
-  color:var(--muted);
-  margin:8px 0;
-  line-height:1.72;
-}
-
-.manuscript-venue{
-  font-size:12px;
-  color:var(--ink);
-  font-weight:650;
-  margin:8px 0;
-}
-
-.manuscript-inline-links{
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
-  margin-top:12px;
-}
-
-.manuscript-inline-links a{
-  font-size:12px;
-  font-weight:750;
-  text-decoration:none;
-}
-
-.manuscript-inline-links a:hover{
-  text-decoration:underline;
-}
-
-.manuscript-current{
-  background:linear-gradient(
-    90deg,
-    var(--soft) 0%,
-    color-mix(in srgb, var(--soft) 45%, transparent) 58%,
-    transparent 100%
-  );
-}
-
-.manuscript-status{
-  font-size:12px;
-  color:var(--accentdark);
-  font-weight:650;
-  margin:8px 0 0;
+.related-manuscripts .project-row:first-of-type{
+  padding-top:28px;
 }
 
 
-/* ==========================================================
-   OPTIONAL PUBLICATION NOTE
-========================================================== */
-
+/* Optional note for a project without a manuscript list */
 .program-publications-note{
-  margin:22px 0 0 74px;
+  margin:22px 0 0;
   padding:18px 20px;
   background:var(--soft);
   border-left:3px solid var(--accent);
@@ -1081,7 +987,7 @@ button{
 
 
 /* ==========================================================
-   PROJECT PAGE RESPONSIVE EXTENSIONS
+   PROJECTS PAGE RESPONSIVE EXTENSIONS
 ========================================================== */
 
 @media(max-width:940px){
@@ -1089,14 +995,6 @@ button{
   .program-head{
     grid-template-columns:48px minmax(0,1fr);
     gap:12px;
-  }
-
-  .related-manuscripts{
-    margin-left:60px;
-  }
-
-  .program-publications-note{
-    margin-left:60px;
   }
 
 }
@@ -1132,36 +1030,12 @@ button{
     padding:5px 8px;
   }
 
-  .related-manuscripts{
-    margin-left:47px;
+  .related-manuscripts .project-row{
+    padding:24px 0;
   }
 
-  .related-heading h3{
-    font-size:18px;
-  }
-
-  .manuscript-row{
-    grid-template-columns:39px 1fr;
-    gap:8px;
-    padding:22px 0;
-  }
-
-  .manuscript-copy h4{
-    font-size:20px;
-  }
-
-  .program-publications-note{
-    margin-left:47px;
-  }
-
-}
-
-
-@media(max-width:390px){
-
-  .related-manuscripts,
-  .program-publications-note{
-    margin-left:0;
+  .related-manuscripts .project-row:first-of-type{
+    padding-top:24px;
   }
 
 }
