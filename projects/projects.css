@@ -167,7 +167,9 @@
   letter-spacing:.5px;
 }
 
-
+.justified-text {
+  text-align: justify;
+}
 
 /* =========================================================
    RESEARCH THEME HEADING
