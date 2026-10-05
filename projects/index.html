@@ -945,7 +945,7 @@
               <div class="mini-meta">
 
                 <span>
-                  2023
+                  2021
                 </span>
 
                 <span>
@@ -983,7 +983,7 @@
                 >
 
                 <figcaption>
-                  Architecture of the lane-marking detection framework.
+                  Architecture of the lane-marking detection framework (SegNet).
                 </figcaption>
 
               </figure>
@@ -1021,7 +1021,7 @@
 
 
           <!-- =================================================
-               Lane Marking Review
+               Instant segmentation network
           ================================================== -->
 
           <article class="project-row">
@@ -1033,11 +1033,15 @@
               <div class="mini-meta">
 
                 <span>
-                  2022
+                  2023
                 </span>
 
                 <span>
                   published
+                </span>
+
+                <span>
+                  Heliyon
                 </span>
 
               </div>
@@ -1045,7 +1049,7 @@
 
 
               <h3>
-                Lane Marking Review
+                EDIS-Net
               </h3>
 
 
@@ -1060,31 +1064,40 @@
               <figure class="manuscript-figure">
 
                 <img
-                  src="/aamamun/projects/images/lane-review-framework.png"
+                  src="/aamamun/projects/images/EDIS-Net.png"
                   alt="Framework summarising deep neural network approaches for lane marking detection"
                   loading="lazy"
                   decoding="async"
                 >
 
                 <figcaption>
-                  Framework summarising deep-learning approaches to lane-marking detection.
+                  Architecture of the EDIS-Net framework.
                 </figcaption>
 
               </figure>
 
 
 
-              <p>
-                Reviews deep neural network approaches, datasets,
-                evaluation strategies and research directions
-                for lane-marking detection.
+              <p class="justified-text">
+                EDIS-Net is a deep learning framework for robust lane-marking detection under diverse road and environmental conditions. Its main technical contribution is an encode-decode instant segmentation architecture based on E-Net, where the decoder is separated into binary segmentation and instance segmentation branches to learn both lane-pixel information and pixel-level lane associations. The framework further combines cross-entropy and discriminative losses and applies DBSCAN clustering to group predicted lane pixels into individual lane markings, enabling structured lane extraction across challenging scenarios such as shadows, illumination variation, obstacles, and curved roads.
               </p>
 
 
+              <div class="inline-links">
 
-              <p class="venue">
-                Sensors
-              </p>
+
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S2405844023014196"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Paper ↗
+                </a>
+
+
+              </div>
+
+
 
 
             </div>
