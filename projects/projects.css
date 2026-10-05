@@ -2,12 +2,13 @@
    PROJECTS PAGE
    Abdullah Al Mamun Academic Portfolio
 
-   This file extends /aamamun/style.css.
+   This stylesheet extends:
+   /aamamun/style.css
 
-   All project-specific styles are scoped under
-   .projects-page so they do not affect the Home page
-   or other website pages.
+   All additional styling is scoped beneath .projects-page.
+   Therefore it does not alter the Home page or other pages.
 ========================================================= */
+
 
 
 /* =========================================================
@@ -26,7 +27,7 @@
 
 
 /* =========================================================
-   RESEARCH CATEGORY INDEX
+   RESEARCH THEME INDEX
 ========================================================= */
 
 .projects-page .project-theme-index{
@@ -103,11 +104,11 @@
 
 
 /* =========================================================
-   RESEARCH PROJECT CATEGORY
+   RESEARCH THEME
 ========================================================= */
 
 .projects-page .research-theme{
-  margin:0 0 76px;
+  margin:0 0 78px;
 
   scroll-margin-top:110px;
 }
@@ -115,7 +116,7 @@
 
 
 /* =========================================================
-   RESEARCH PROJECT HEADER
+   RESEARCH THEME HEADER
 ========================================================= */
 
 .projects-page .research-theme-header{
@@ -137,7 +138,7 @@
 
 
 /* =========================================================
-   PROJECT NUMBER
+   RESEARCH THEME NUMBER
 ========================================================= */
 
 .projects-page .research-theme-number{
@@ -169,7 +170,7 @@
 
 
 /* =========================================================
-   PROJECT CATEGORY HEADING
+   RESEARCH THEME HEADING
 ========================================================= */
 
 .projects-page .research-theme-heading{
@@ -229,9 +230,6 @@
 
 /* =========================================================
    FEATURED MANUSCRIPTS HEADING
-
-   Uses the same visual language as the Home page
-   "Featured research" section.
 ========================================================= */
 
 .projects-page .featured-manuscripts-bar{
@@ -252,14 +250,11 @@
 
 
 /* =========================================================
-   MANUSCRIPTS
+   MANUSCRIPT ROWS
 
-   Important:
-   Shared style.css defines .project-row as a two-column
-   layout because Home uses manuscript numbers.
-
-   On Projects page we remove those numbers, so project-row
-   becomes one full-width column here.
+   Shared style.css uses a two-column project layout on Home.
+   Individual manuscript numbering is removed here, so each
+   manuscript becomes a full-width row on Projects.
 ========================================================= */
 
 .projects-page
@@ -268,7 +263,7 @@
 
   display:block;
 
-  padding:27px 0;
+  padding:29px 0 31px;
 
   border-bottom:1px solid var(--line);
 }
@@ -315,7 +310,7 @@
 .research-theme-projects
 .project-subtitle{
 
-  max-width:720px;
+  max-width:760px;
 }
 
 
@@ -323,13 +318,13 @@
 .research-theme-projects
 .project-copy > p:not(.project-subtitle):not(.venue){
 
-  max-width:710px;
+  max-width:730px;
 }
 
 
 
 /* =========================================================
-   MANUSCRIPT METADATA
+   MANUSCRIPT META
 ========================================================= */
 
 .projects-page
@@ -349,6 +344,68 @@
   color:var(--accentdark);
 
   font-weight:800;
+}
+
+
+
+/* =========================================================
+   ARCHITECTURE / FRAMEWORK FIGURES
+========================================================= */
+
+.projects-page .manuscript-figure{
+  width:100%;
+
+  max-width:780px;
+
+  margin:22px 0 20px;
+}
+
+
+.projects-page .manuscript-figure img{
+  display:block;
+
+  width:100%;
+
+  height:auto;
+
+  max-height:560px;
+
+  object-fit:contain;
+
+  background:var(--paper);
+
+  border:1px solid var(--line);
+
+  border-radius:9px;
+
+  padding:12px;
+
+  box-shadow:var(--shadow);
+
+  transition:
+    border-color .15s ease,
+    box-shadow .15s ease,
+    transform .15s ease;
+}
+
+
+.projects-page .manuscript-figure img:hover{
+  border-color:var(--accent);
+
+  transform:translateY(-1px);
+}
+
+
+.projects-page .manuscript-figure figcaption{
+  margin:8px 5px 0;
+
+  color:var(--muted);
+
+  font-size:11px;
+
+  line-height:1.55;
+
+  text-align:center;
 }
 
 
@@ -375,13 +432,13 @@
 
 
 /* =========================================================
-   SEPARATION BETWEEN PROJECT CATEGORIES
+   SEPARATION BETWEEN RESEARCH THEMES
 ========================================================= */
 
 .projects-page
 .research-theme + .research-theme{
 
-  margin-top:8px;
+  margin-top:10px;
 }
 
 
@@ -394,24 +451,26 @@
 
 
   .projects-page .project-theme-index{
-
     margin-bottom:45px;
   }
 
 
   .projects-page .research-theme{
-
     scroll-margin-top:150px;
   }
 
 
   .projects-page .research-theme-header{
-
     grid-template-columns:
       45px
       minmax(0,1fr);
 
     gap:14px;
+  }
+
+
+  .projects-page .manuscript-figure{
+    max-width:100%;
   }
 
 
@@ -427,13 +486,11 @@
 
 
   .projects-page .project-theme-index{
-
     grid-template-columns:1fr;
   }
 
 
   .projects-page .research-theme-number{
-
     width:37px;
 
     height:37px;
@@ -443,16 +500,19 @@
 
 
   .projects-page .research-theme-heading h2{
-
     font-size:21px;
   }
 
 
   .projects-page .research-theme-description{
-
     text-align:left;
 
     hyphens:none;
+  }
+
+
+  .projects-page .manuscript-figure img{
+    padding:9px;
   }
 
 
@@ -468,7 +528,6 @@
 
 
   .projects-page .project-theme-index{
-
     gap:8px;
 
     margin-bottom:38px;
@@ -476,7 +535,6 @@
 
 
   .projects-page .project-theme-index a{
-
     min-height:auto;
 
     padding:13px 14px;
@@ -486,13 +544,11 @@
 
 
   .projects-page .research-theme{
-
-    margin-bottom:57px;
+    margin-bottom:58px;
   }
 
 
   .projects-page .research-theme-header{
-
     grid-template-columns:
       38px
       minmax(0,1fr);
@@ -504,7 +560,6 @@
 
 
   .projects-page .research-theme-number{
-
     width:33px;
 
     height:33px;
@@ -514,7 +569,6 @@
 
 
   .projects-page .research-theme-heading h2{
-
     font-size:19px;
 
     letter-spacing:-.35px;
@@ -522,7 +576,6 @@
 
 
   .projects-page .research-theme-kicker{
-
     font-size:9px;
 
     letter-spacing:1.15px;
@@ -530,19 +583,16 @@
 
 
   .projects-page .research-theme-description{
-
     font-size:12.5px;
   }
 
 
   .projects-page .featured-manuscripts-bar{
-
     margin-top:4px;
   }
 
 
   .projects-page .featured-manuscripts-bar h2{
-
     font-size:18px;
   }
 
@@ -553,7 +603,28 @@
 
     padding-top:23px;
 
-    padding-bottom:23px;
+    padding-bottom:25px;
+  }
+
+
+  .projects-page .manuscript-figure{
+    margin:17px 0 17px;
+  }
+
+
+  .projects-page .manuscript-figure img{
+    max-height:none;
+
+    padding:5px;
+
+    border-radius:7px;
+  }
+
+
+  .projects-page .manuscript-figure figcaption{
+    margin-top:6px;
+
+    font-size:10px;
   }
 
 
@@ -568,7 +639,8 @@
 @media(prefers-reduced-motion:reduce){
 
 
-  .projects-page .project-theme-index a{
+  .projects-page .project-theme-index a,
+  .projects-page .manuscript-figure img{
 
     transition:none;
   }
